@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weather</title>
+<link rel="icon" type="image/png" href="icono.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        width: 100%;
+        height: 100vh;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #272629;
+      }
+      .container{
+      	background-color: white;
+      	
+      }   
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+	
+	<div class="row">
+		<div class="col-md-6">
+			<div id="map"></div>
+		</div>
+
+		<div class="col-md-6">
+			<h1>Google Maps APP</h1>
+			<div class="form-group">
+				<select class="form-control" id="select">
+					<option value="">Seleccione una ubicación</option>
+					<option value="scl">Santiago, Región Metropolitana</option>
+					<option value="lsc">La serena,Cuarta Región</option>
+				</select>
+			</div>
+			<div class="data-weather"></div>
+       <img src="" class="img-responsive">
+		</div>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA_m00gCN3it7ADJYxXIpX8tVAZGzwnbo&callback=initMap"></script>
+</body>
+</html>
